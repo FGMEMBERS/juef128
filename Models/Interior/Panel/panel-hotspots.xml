@@ -190,6 +190,211 @@
 		  <wrap>false</wrap>
 	  </binding>
   </action>
+
+  <!-- station-1 start -->
+  <!-- Station1 - on -->
+  <action>
+   <name>station1-on</name>
+   <button>0</button>
+   <x>-251</x>
+   <y>-34</y>
+   <w>8</w>
+   <h>70</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station1/selected</property>
+    <value>1</value>
+   </binding>
+  </action>
+  <!-- Station1 - off -->
+  <action>
+   <name>station1-off</name>
+   <button>0</button>
+   <x>-255</x>
+   <y>-62</y>
+   <w>10</w>
+   <h>14</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station1/selected</property>
+    <value>0</value>
+   </binding>
+  </action>
+
+  <!-- Station2 - on -->
+  <action>
+   <name>station2-on</name>
+   <button>0</button>
+   <x>-242</x>
+   <y>-34</y>
+   <w>8</w>
+   <h>70</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station2/selected</property>
+    <value>1</value>
+   </binding>
+  </action>
+  <!-- Station2 - off -->
+  <action>
+   <name>station2-off</name>
+   <button>0</button>
+   <x>-245</x>
+   <y>-62</y>
+   <w>10</w>
+   <h>14</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station2/selected</property>
+    <value>0</value>
+   </binding>
+  </action>
+
+  <!-- Station3 - on -->
+  <action>
+   <name>station3-on</name>
+   <button>0</button>
+   <x>-233</x>
+   <y>-34</y>
+   <w>8</w>
+   <h>70</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station3/selected</property>
+    <value>1</value>
+   </binding>
+  </action>
+  <!-- Station3 - off -->
+  <action>
+   <name>station3-off</name>
+   <button>0</button>
+   <x>-235</x>
+   <y>-62</y>
+   <w>10</w>
+   <h>14</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station3/selected</property>
+    <value>0</value>
+   </binding>
+  </action>
+
+  <!-- Station4 - on -->
+  <action>
+   <name>station4-on</name>
+   <button>0</button>
+   <x>-224</x>
+   <y>-34</y>
+   <w>8</w>
+   <h>70</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station4/selected</property>
+    <value>1</value>
+   </binding>
+  </action>
+  <!-- Station4 - off -->
+  <action>
+   <name>station4-off</name>
+   <button>0</button>
+   <x>-225</x>
+   <y>-62</y>
+   <w>10</w>
+   <h>14</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station4/selected</property>
+    <value>0</value>
+   </binding>
+  </action>
+
+  <!-- Station5 - on -->
+  <action>
+   <name>station5-on</name>
+   <button>0</button>
+   <x>-215</x>
+   <y>-34</y>
+   <w>8</w>
+   <h>70</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station5/selected</property>
+    <value>1</value>
+   </binding>
+  </action>
+  <!-- Station5 - off -->
+  <action>
+   <name>station5-off</name>
+   <button>0</button>
+   <x>-215</x>
+   <y>-62</y>
+   <w>10</w>
+   <h>14</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station5/selected</property>
+    <value>0</value>
+   </binding>
+  </action>
+
+  <!-- Station6 - on -->
+  <action>
+   <name>station6-on</name>
+   <button>0</button>
+   <x>-206</x>
+   <y>-34</y>
+   <w>8</w>
+   <h>70</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station6/selected</property>
+    <value>1</value>
+   </binding>
+  </action>
+  <!-- Station6 - off -->
+  <action>
+   <name>station6-off</name>
+   <button>0</button>
+   <x>-205</x>
+   <y>-62</y>
+   <w>10</w>
+   <h>14</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station6/selected</property>
+    <value>0</value>
+   </binding>
+  </action>
+
+  <!-- Station7 - on -->
+  <action>
+   <name>station7-on</name>
+   <button>0</button>
+   <x>-196</x>
+   <y>-34</y>
+   <w>8</w>
+   <h>70</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station7/selected</property>
+    <value>1</value>
+   </binding>
+  </action>
+  <!-- Station7 - off -->
+  <action>
+   <name>station7-off</name>
+   <button>0</button>
+   <x>-195</x>
+   <y>-62</y>
+   <w>10</w>
+   <h>14</h>
+   <binding>
+    <command>property-assign</command>
+    <property>fdm/jsbsim/systems/armament/station7/selected</property>
+    <value>0</value>
+   </binding>
+  </action>
+  <!-- station-1 end -->
  </actions>
 
   </instrument>

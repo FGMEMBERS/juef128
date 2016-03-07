@@ -25,7 +25,25 @@
        </binding>
      </mod-up>
    </key>
-			<key n="25">
+    <!-- station-1 start -->
+    <key n="11">
+     <name>Ctrl-K</name>
+     <desc>Release selected store(s)</desc>
+      <binding>
+       <command>property-assign</command>
+       <property>fdm/jsbsim/systems/armament/release</property>
+       <value>1</value>
+      </binding>
+     <mod-up>
+       <binding>
+        <command>property-assign</command>
+        <property>fdm/jsbsim/systems/armament/release</property>
+        <value>0</value> 
+       </binding>
+     </mod-up>
+    </key>
+    <!-- station-1 end -->
+			<!--<key n="25">
 				<name>Ctrl-Y</name>
 				<desc>Jettison Inner and Outer Pylon Stores.</desc>
 				<binding>
@@ -54,7 +72,7 @@
 					<value type="bool">1</value>
 				</binding>
 
-			</key>
+			</key>-->
 
 </PropertyList>
 

@@ -15,7 +15,8 @@
 
   <!-- Sound file -->
     <sound>
-     <path>Aircraft/juef128/Sounds/juef128-sound.xml</path>
+     <!--<path>Aircraft/juef128/Sounds/juef128-sound.xml</path>-->
+     <path>Aircraft/juef128/Sounds/juef128-custom-sound.xml</path>
     </sound>
 
   <!-- HUD -->    
@@ -118,8 +119,8 @@
     <desc>toggle speed brake</desc>
    </key>
     <key>
-				<name>Ctrl-Y</name>
-				<desc>drop tank</desc>
+				<name>Ctrl-K</name>
+				<desc>drop tanks or bombs/fire missiles</desc>
     </key>
   </help>
 
@@ -144,6 +145,44 @@
     <keyboard include="Nasal/juef128_custom-keyboard.xml"/>
   </input>
 
+
+ <!-- station-1 start -->
+ <fdm>
+   <jsbsim>
+   <simulation>
+     <sim-time-sec>0</sim-time-sec>
+   </simulation>
+     <systems>
+       <dump>
+         <armed type="double">0</armed>
+       </dump>
+       <armament>
+         <station1>
+             <selected type="int">0</selected>
+         </station1>
+         <station2>
+             <selected type="int">0</selected>
+         </station2>
+         <station3>
+             <selected type="int">0</selected>
+         </station3>
+         <station4>
+             <selected type="int">0</selected>
+         </station4>
+         <station5>
+             <selected type="int">0</selected>
+         </station5>
+         <station6>
+             <selected type="int">0</selected>
+         </station6>
+         <station7>
+             <selected type="int">0</selected>
+         </station7>
+       </armament>
+     </systems>
+   </jsbsim>
+ </fdm>  
+ <!-- station-1 end -->
 
  <!-- engines:initial setting -->
  <engines>

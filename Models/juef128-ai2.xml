@@ -42,18 +42,15 @@
     <object-name>mainr_gear_cover</object-name>
     <object-name>mainl_gear_cover</object-name>
 
-
-    <object-name>glass</object-name>
-    <object-name>rear_glass</object-name>
   </animation>
 
    <!-- Transparent Surfaces for Rembrandt rendering -->
    <effect>
        <inherits-from>Effects/model-transparent</inherits-from>
        <!--<inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>-->
-   　  <condition>
-      　 <property>sim/rendering/rembrandt/enabled</property>
-   　  </condition>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
        <object-name>glass</object-name>
        <object-name>rear_glass</object-name>
    </effect>

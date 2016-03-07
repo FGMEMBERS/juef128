@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>missile2.ac</path>
+
+ <animation>
+  <enable-hot type="bool">false</enable-hot>
+ </animation>
+
+
+ <animation>
+  <type>select</type>
+		<object-name>body-rear</object-name>
+		<object-name>body-front</object-name>
+		<object-name>fins</object-name>
+		<object-name>fins.001</object-name>
+		<object-name>fins.002</object-name>
+		<object-name>Cone</object-name>
+  <condition>
+   <not>
+     <property>fdm/jsbsim/systems/armament/station1/released</property>
+   </not>
+  </condition>
+ </animation>
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>2000</max-m>
+ </animation>
+
+</PropertyList>

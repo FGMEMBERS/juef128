@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>missile2.ac</path>
+
+ <animation>
+  <enable-hot type="bool">false</enable-hot>
+ </animation>
+
+
+ <animation>
+  <type>select</type>
+		<object-name>body-rear</object-name>
+		<object-name>body-front</object-name>
+		<object-name>fins</object-name>
+		<object-name>fins.001</object-name>
+		<object-name>fins.002</object-name>
+		<object-name>Cone</object-name>
+  <condition>
+   <not>
+     <property>fdm/jsbsim/systems/armament/release</property>
+   </not>
+  </condition>
+ </animation>
+ <animation>
+  <type>material</type>
+  <object-name>Cone</object-name>
+   <condition>
+   <not>
+     <property>fdm/jsbsim/systems/armament/release</property>
+   </not>
+   </condition> 
+         <emission>
+            <red>1</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
+        </emission>
+ </animation>  
+
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/trail/rocket_smoke.xml</path>
+	<condition>
+		<!--<equals>
+			<property>/controls/armament/station[2]/missiles</property>
+					<value type="bool">1</value>
+		</equals>-->
+		<not>
+			<property>fdm/jsbsim/systems/armament/release</property>
+					<value type="bool">1</value>
+		</not>
+	</condition>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m> -0.0 </y-m>
+      <z-m> -0.0 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>2000</max-m>
+ </animation>
+
+</PropertyList>

@@ -56,14 +56,14 @@
 		<submodel-path>Aircraft/juef128/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
   </submodel>
 
-	<submodel>
+	<!--<submodel>
 		<name>droptank-right</name>
 		<model>Aircraft/juef128/Models/droptank.xml</model>
 		<trigger>controls/armament/station[0]/jettison-all</trigger>
 		<speed>0</speed>
 		<repeat>false</repeat>
 		<count>1</count>
-		<x-offset> 1.00</x-offset>
+		<x-offset>-1.5600</x-offset>
 		<y-offset> 5.7500</y-offset>
 		<z-offset>-0.1515</z-offset>
 		<yaw-offset>0</yaw-offset>
@@ -88,7 +88,7 @@
 		<speed>0</speed>
 		<repeat>false</repeat>
 		<count>1</count>
-		<x-offset> 1.00</x-offset>
+		<x-offset>-1.5600</x-offset>
 		<y-offset>-5.7500</y-offset>
 		<z-offset>-0.1515</z-offset>
 		<yaw-offset>0</yaw-offset>
@@ -104,7 +104,174 @@
 		<force-path>sim/ai/ballistic/force[1]</force-path>
 			<slaved>true</slaved>
 			<aero_stabilized>true</aero_stabilized>
-	</submodel>
+	</submodel>-->
+
+  <!-- station-1 start -->
+
+  <submodel>
+    <name>jettison left fuel tank</name>
+    <model>Aircraft/juef128/Models/Stores/Tanks/tank.xml</model>
+    <trigger>fdm/jsbsim/systems/armament/station2/released</trigger>
+    <trigger-once>true</trigger-once>
+    <speed>0.0</speed>
+    <count>1</count>
+    <!--<x-offset> 1.0</x-offset>
+    <y-offset>-8.82</y-offset>
+    <z-offset>-4.0</z-offset>-->
+		<x-offset> 1.00</x-offset>
+		<y-offset>-5.7500</y-offset>
+		<z-offset>-0.1515</z-offset>
+    <yaw-offset>0.0</yaw-offset>
+    <!--<pitch-offset>-4</pitch-offset>-->
+    <pitch-offset>0</pitch-offset>
+    <eda>1.0</eda>
+    <weight>250.0</weight>
+    <cd>0.3</cd>
+    <collision>false</collision>
+    <impact>false</impact>
+  </submodel>
+
+  <submodel>
+    <name>jettison right fuel tank</name>
+    <model>Aircraft/juef128/Models/Stores/Tanks/tank.xml</model>
+    <trigger>fdm/jsbsim/systems/armament/station6/released</trigger>
+    <trigger-once>true</trigger-once>
+    <speed>0.0</speed>
+    <count>1</count>
+    <!--<x-offset> 1.0</x-offset>
+    <y-offset> 8.82</y-offset>
+    <z-offset>-4.0</z-offset>-->
+		<x-offset> 1.00</x-offset>
+		<y-offset> 5.7500</y-offset>
+		<z-offset>-0.1515</z-offset>
+    <yaw-offset>0.0</yaw-offset>
+    <!--<pitch-offset>-4</pitch-offset>-->
+    <pitch-offset>0</pitch-offset>
+    <eda>1.0</eda>
+    <weight>250.0</weight>
+    <cd>0.3</cd>
+    <collision>false</collision>
+    <impact>false</impact>
+  </submodel>
+
+  <submodel>
+    <!--<name>drop bomb, station 1</name>
+    <model>Aircraft/juef128/Models/missiles/x-4-left.xml</model>-->
+    <name>missile, station 1</name>
+    <model>Aircraft/juef128/Models/Stores/Missiles/missile.xml</model>
+    <trigger>fdm/jsbsim/systems/armament/station1/released</trigger>
+    <trigger-once>true</trigger-once>
+		<speed>500</speed>
+		<repeat>false</repeat>
+                <count>1</count>
+		<!--<x-offset>0.9600</x-offset>
+		<y-offset>5.7500</y-offset>
+		<z-offset>-0.0715</z-offset>-->
+		    <x-offset>-6.60</x-offset>
+		    <y-offset>-11.63</y-offset>
+		    <z-offset>0.15</z-offset>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset>0</pitch-offset>
+		<wind>false</wind>
+		<eda>0.000001</eda>
+		<weight>500</weight>
+　　　　　　　　 <buoyancy>32.0</buoyancy>
+		<cd>0</cd>
+                <life>5</life>
+		<aero-stabilised>true</aero-stabilised>
+		<collision>true</collision>
+		<impact>true</impact>
+		<impact-report>ai/models/model-impact</impact-report>
+		<submodel-path>Aircraft/juef128/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>drop bomb, station 3</name>
+    <!--<model>Aircraft/DavePack/Stores/M117/m117.xml</model>-->
+    <model>Aircraft/juef128/Models/Stores/Bombs/bomb.xml</model>
+    <trigger>fdm/jsbsim/systems/armament/station3/released</trigger>
+    <trigger-once>true</trigger-once>
+    <speed>0.0</speed>
+    <count>1</count>
+    <!--<x-offset> 5.7</x-offset>
+    <y-offset>-4.36</y-offset>
+    <z-offset>-3.3</z-offset>-->
+    <x-offset> 3.01</x-offset>
+    <y-offset>-3.75</y-offset>
+    <z-offset> 0.09</z-offset>
+    <yaw-offset>0.0</yaw-offset>
+    <!--<pitch-offset>-2</pitch-offset>-->
+    <pitch-offset>0</pitch-offset>
+    <eda>1.0</eda>
+    <weight>820.0</weight>
+    <cd>0.3</cd>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/cannon</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/droptank</impact-report>
+    <!--<submodel-path>Aircraft/DavePack/Stores/M117/M-117-submodels.xml</submodel-path>-->
+    <submodel-path>Aircraft/juef128/Models/Stores/Bombs/bomb-submodels.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>drop bomb, station 5</name>
+    <!--<model>Aircraft/DavePack/Stores/M117/m117.xml</model>-->
+    <model>Aircraft/juef128/Models/Stores/Bombs/bomb.xml</model>
+    <trigger>fdm/jsbsim/systems/armament/station5/released</trigger>
+    <trigger-once>true</trigger-once>
+    <speed>0.0</speed>
+    <count>1</count>
+    <!--<x-offset> 5.7</x-offset>
+    <y-offset> 4.36</y-offset>
+    <z-offset>-3.3</z-offset>-->
+    <x-offset> 3.01</x-offset>
+    <y-offset> 3.75</y-offset>
+    <z-offset> 0.09</z-offset>
+    <yaw-offset>0.0</yaw-offset>
+    <!--<pitch-offset>-2</pitch-offset>-->
+    <pitch-offset>0</pitch-offset>
+    <eda>1.0</eda>
+    <weight>820.0</weight>
+    <cd>0.3</cd>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/cannon</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/droptank</impact-report>
+    <!--<submodel-path>Aircraft/DavePack/Stores/M117/M-117-submodels.xml</submodel-path>-->
+    <submodel-path>Aircraft/juef128/Models/Stores/Bombs/bomb-submodels.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <!--<name>drop bomb, station 7</name>
+    <model>Aircraft/juef128/Models/missiles/x-4-right.xml</model>-->
+    <name>missile, station 7</name>
+    <model>Aircraft/juef128/Models/Stores/Missiles/missile.xml</model>
+    <trigger>fdm/jsbsim/systems/armament/station7/released</trigger>
+    <trigger-once>true</trigger-once>
+		<speed>500</speed>
+		<repeat>false</repeat>
+                <count>1</count>
+		<!--<x-offset>0.9600</x-offset>
+		<y-offset>5.7500</y-offset>
+		<z-offset>-0.0715</z-offset>-->
+		    <x-offset>-6.60</x-offset>
+		    <y-offset>11.63</y-offset>
+		    <z-offset>0.15</z-offset>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset>0</pitch-offset>
+		<wind>false</wind>
+		<eda>0.000001</eda>
+		<weight>500</weight>
+　　　　　　　　 <buoyancy>32.0</buoyancy>
+		<cd>0</cd>
+                <life>5</life>
+		<aero-stabilised>true</aero-stabilised>
+		<collision>true</collision>
+		<impact>true</impact>
+		<impact-report>ai/models/model-impact</impact-report>
+		<submodel-path>Aircraft/juef128/Models/Stores/GAU-8A/gau-8a-submodels.xml</submodel-path>
+  </submodel>
+  <!-- station-1 end -->
 
 </PropertyList>
 

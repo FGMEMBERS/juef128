@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <!--<path>droptank.ac</path>-->
+ <path>droptank-n2.ac</path>
+
+ <animation>
+  <type>select</type>
+  <!--<object-name>body-front</object-name>
+  <object-name>body-rear</object-name>
+  <object-name>fins</object-name>
+  <object-name>fins.001</object-name>-->
+  <object-name>tank_body</object-name>
+  <object-name>tank_top</object-name>
+  <object-name>tank_fin_1</object-name>
+  <object-name>tank_fin_2</object-name>
+  <condition>
+   <not>
+     <property>fdm/jsbsim/systems/armament/station6/released</property>
+   </not>
+  </condition>
+ </animation>  
+
+</PropertyList>

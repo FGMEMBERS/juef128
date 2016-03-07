@@ -41,6 +41,7 @@
     <object-name>nosel_gear_cover</object-name>
     <object-name>mainr_gear_cover</object-name>
     <object-name>mainl_gear_cover</object-name>
+    <object-name>cockpit</object-name>
 
 
     <object-name>glass</object-name>
@@ -51,9 +52,9 @@
    <effect>
        <inherits-from>Effects/model-transparent</inherits-from>
        <!--<inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>-->
-   　  <condition>
-      　 <property>sim/rendering/rembrandt/enabled</property>
-   　  </condition>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
        <object-name>glass</object-name>
        <object-name>rear_glass</object-name>
    </effect>
@@ -102,8 +103,8 @@
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <!--<texture>texture.png</texture>-->
-    <texture>red.png</texture>
+    <texture>texture.png</texture>
+    <!--<texture>red2.png</texture>-->
   </animation>
 
 
@@ -320,6 +321,112 @@
     </offsets>
   </model>
 
+ <!-- station-1 start -->
+
+ <model>
+  <!--<path>Aircraft/DavePack/Instruments/Armament/station-select.xml</path>-->
+  <path>Aircraft/juef128/Models/Interior/Panel/Instruments/Armament/station-select.xml</path>
+  <offsets>
+   <!--<x-m>-2.286</x-m>
+   <y-m>-0.17</y-m>
+   <z-m> 0.735</z-m>
+   <x-m>-2.282</x-m>
+   <y-m>-0.18</y-m>
+   <z-m> 0.622</z-m>-->
+   <x-m>-2.270</x-m>
+   <y-m>-0.18</y-m>
+   <z-m> 0.590</z-m>
+   <pitch-deg>-4</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/juef128/Models/Stores/Tanks/droptank-sta2.xml</path>
+   <offsets>
+     <!--<x-m>-0.3</x-m>
+     <y-m>-2.757</y-m>
+     <z-m>-1.0</z-m>
+     <pitch-deg>-4</pitch-deg>-->
+			<x-m> -0.300</x-m>
+			<y-m> -1.7500</y-m>
+			<z-m> -0.0215</z-m>
+     <pitch-deg>-2</pitch-deg>
+   </offsets>
+ </model>
+ <model>
+   <path>Aircraft/juef128/Models/Stores/Tanks/droptank-sta6.xml</path>
+   <offsets>
+     <!--<x-m>-0.3</x-m>
+     <y-m> 2.757</y-m>
+     <z-m>-1.0</z-m>
+     <pitch-deg>-4</pitch-deg>-->
+			<x-m> -0.300</x-m>
+			<y-m> 1.7500</y-m>
+			<z-m> -0.0215</z-m>
+     <pitch-deg>-2</pitch-deg>
+   </offsets>
+ </model>
+
+ <model><!-- Missile, 190 lb., station 1 -->
+   <!--<path>Aircraft/DavePack/Stores/Mk82/mk82-sta1.xml</path>-->
+   <path>Aircraft/juef128/Models/Stores/Missiles/missile-sta1.xml</path>
+   <offsets>
+     <!--<x-m> 2.01</x-m>
+     <y-m>-4.08</y-m>
+     <z-m>-0.75</z-m>-->
+     <x-m> 1.71</x-m>
+     <y-m>-3.56</y-m>
+     <z-m> 0.05</z-m>
+     <!--<pitch-deg>-2</pitch-deg>-->
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+
+ <model><!-- Bomb, 500 lb., station 3 -->
+   <!--<path>Aircraft/DavePack/Stores/M117/m117-sta3.xml</path>-->
+   <path>Aircraft/juef128/Models/Stores/Bombs/bomb-sta3.xml</path>
+   <offsets>
+     <!--<x-m>-1.75</x-m>
+     <y-m>-1.33</y-m>
+     <z-m>-0.84</z-m>-->
+     <x-m>-0.93</x-m>
+     <y-m>-1.16</y-m>
+     <z-m>0.06</z-m>
+     <!--<pitch-deg>-2</pitch-deg>-->
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+
+ <model><!-- Bomb, 500 lb., station 5 -->
+   <!--<path>Aircraft/DavePack/Stores/M117/m117-sta5.xml</path>-->
+   <path>Aircraft/juef128/Models/Stores/Bombs/bomb-sta5.xml</path>
+   <offsets>
+     <!--<x-m>-1.75</x-m>
+     <y-m> 1.33</y-m>
+     <z-m>-0.84</z-m>-->
+     <x-m>-0.93</x-m>
+     <y-m> 1.16</y-m>
+     <z-m>0.06</z-m>
+     <!--<pitch-deg>-2</pitch-deg>-->
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+
+ <model><!-- Missile, 190 lb., station 7 -->
+   <!--<path>Aircraft/DavePack/Stores/Mk82/mk82-sta7.xml</path>-->
+   <path>Aircraft/juef128/Models/Stores/Missiles/missile-sta7.xml</path>
+   <offsets>
+     <!--<x-m> 2.01</x-m>
+     <y-m> 4.08</y-m>
+     <z-m>-0.75</z-m>-->
+     <x-m> 1.71</x-m>
+     <y-m> 3.56</y-m>
+     <z-m> 0.05</z-m>
+     <!--<pitch-deg>-2</pitch-deg>-->
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+ <!-- station-1 end -->
 
 <!-- rotor  -->
 
@@ -762,11 +869,54 @@
     </axis>
   </animation>
 
-	<!-- drop tank -->
+	<!-- pylon -->
 	<model>
-		<path>Aircraft/juef128/Models/missiles/pylon3.xml</path>
+		<path>Aircraft/juef128/Models/pylon3.xml</path>
+		<name>outer_pylon_left</name>
+		<offsets>
+			<!--<x-m> 2.2500</x-m>-->
+			<x-m> 2.3000</x-m>
+			<y-m> -3.5500</y-m>
+			<z-m> 0.3715</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/juef128/Models/pylon3.xml</path>
+		<name>pylon_left</name>
+		<offsets>
+			<!--<x-m> 0.7600</x-m>-->
+			<x-m> 0.3200</x-m>
+			<y-m>-1.7500</y-m>
+			<z-m> 0.3715</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/juef128/Models/pylon3.xml</path>
+		<name>inner_pylon_left</name>
+		<offsets>
+			<x-m> -0.3800</x-m>
+			<y-m> -1.1500</y-m>
+			<z-m> 0.3415</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/juef128/Models/pylon3.xml</path>
+		<name>inner_pylon_right</name>
+		<offsets>
+			<x-m> -0.3800</x-m>
+			<y-m> 1.1500</y-m>
+			<z-m> 0.3415</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/juef128/Models/pylon3.xml</path>
 		<name>pylon_right</name>
 		<offsets>
+			<!--<x-m> 0.7600</x-m>-->
 			<x-m> 0.3200</x-m>
 			<y-m> 1.7500</y-m>
 			<z-m> 0.3715</z-m>
@@ -774,21 +924,23 @@
 		</offsets>
 	</model>
 	<model>
-		<path>Aircraft/juef128/Models/missiles/pylon3.xml</path>
-		<name>pylon_left</name>
+		<path>Aircraft/juef128/Models/pylon3.xml</path>
+		<name>outer_pylon_right</name>
 		<offsets>
-			<x-m> 0.3200</x-m>
-			<y-m>-1.7500</y-m>
+			<!--<x-m> 2.2500</x-m>-->
+			<x-m> 2.3000</x-m>
+			<y-m> 3.5500</y-m>
 			<z-m> 0.3715</z-m>
 			<pitch-deg>0</pitch-deg>
 		</offsets>
 	</model>
 
-	<model>
+	<!-- drop tank -->
+	<!--<model>
 		<path>Aircraft/juef128/Models/droptank.xml</path>
 		<name>Droptank Stbd</name>
 		<offsets>
-			<x-m> -0.300</x-m>
+			<x-m> -0.0600</x-m>
 			<y-m> 1.7500</y-m>
 			<z-m> -0.0715</z-m>
 			<pitch-deg>0</pitch-deg>
@@ -799,9 +951,9 @@
 		<path>Aircraft/juef128/Models/droptank.xml</path>
 		<name>Droptank Port</name>
 		<offsets>
-			<x-m> -0.300</x-m>
-			<y-m> -1.7500</y-m>
-			<z-m> -0.0715</z-m>
+			<x-m> -0.0600</x-m>
+			<y-m>-1.7500</y-m>
+			<z-m>-0.0715</z-m>
 			<pitch-deg>0</pitch-deg>
 		</offsets>
 	</model>
@@ -830,6 +982,6 @@
 				</equals>
 			</not>
 		</condition>
-	</animation>
+	</animation>-->
 
 </PropertyList>

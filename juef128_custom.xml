@@ -74,6 +74,95 @@
      <y>   0.0 </y>
      <z>   0.51 </z>
    </location>
+
+   <!-- station-1 start -->
+   <pointmass name="station1">
+      <!--<weight unit="LBS"> 520 </weight>-->
+      <weight unit="LBS"> 190 </weight>
+      <!--<location name="POINTMASS" unit="IN">
+          <x> 403 </x>
+          <y>-159 </y>
+          <z> -22 </z>-->
+      <location name="POINTMASS" unit="M">
+          <x> 1.71</x>
+          <y> -3.56 </y>
+          <z> 0.05 </z>
+      </location>
+   </pointmass>
+   <pointmass name="station2">
+      <!--<weight unit="LBS"> 100 </weight>-->
+      <weight unit="LBS"> 220 </weight>
+      <!--<location name="POINTMASS" unit="IN">
+          <x> 305 </x>
+          <y> -88 </y>
+          <z> -22 </z>-->
+      <location name="POINTMASS" unit="M">
+          <x> -0.3</x>
+          <y> -1.75 </y>
+          <z> -0.0715 </z>
+      </location>
+   </pointmass>
+   <pointmass name="station3">
+      <!--<weight unit="LBS"> 820 </weight>-->
+      <weight unit="LBS"> 520 </weight>
+      <!--<location name="POINTMASS" unit="IN">
+          <x> 257 </x>
+          <y> -52 </y>
+          <z> -25 </z>-->
+      <location name="POINTMASS" unit="M">
+          <x> -0.93 </x>
+          <y> -1.16 </y>
+          <z> 0.01 </z>
+      </location>
+   </pointmass>
+   <pointmass name="station4">
+      <weight unit="LBS"> 100 </weight>
+      <location name="POINTMASS" unit="IN">
+          <x> 310 </x>
+          <y>   0 </y>
+          <z> -24 </z>
+      </location>
+   </pointmass>
+   <pointmass name="station5">
+      <!--<weight unit="LBS"> 820 </weight>-->
+      <weight unit="LBS"> 520 </weight>
+      <!--<location name="POINTMASS" unit="IN">
+          <x> 257 </x>
+          <y>  52 </y>
+          <z> -25 </z>-->
+      <location name="POINTMASS" unit="M">
+          <x> -0.93 </x>
+          <y> 1.16 </y>
+          <z> 0.01 </z>
+      </location>
+   </pointmass>
+   <pointmass name="station6">
+      <!--<weight unit="LBS"> 100 </weight>-->
+      <weight unit="LBS"> 220 </weight>
+      <!--<location name="POINTMASS" unit="IN">
+          <x> 305 </x>
+          <y>  88 </y>
+          <z> -22 </z>-->
+      <location name="POINTMASS" unit="M">
+          <x> -0.3</x>
+          <y>  1.75 </y>
+          <z> -0.0715 </z>
+      </location>
+   </pointmass>
+   <pointmass name="station7">
+      <!--<weight unit="LBS"> 520 </weight>-->
+      <weight unit="LBS"> 190 </weight>
+      <!--<location name="POINTMASS" unit="IN">
+          <x> 403 </x>
+          <y> 159 </y>
+          <z> -22 </z>-->
+      <location name="POINTMASS" unit="M">
+          <x> 1.71</x>
+          <y> 3.56 </y>
+          <z> 0.05 </z>
+      </location>
+   </pointmass>
+   <!-- station-1 end -->
    <pointmass name="PILOT AND ETC"> <!-- temporal -->
      <form shape="ball">
        <radius unit="M"> 0.5 </radius>
@@ -240,31 +329,51 @@
        <y>   0.00 </y>
        <z>   0.00 </z>
      </location>
-     <capacity unit="LBS"> 0.00 </capacity>
-     <contents unit="LBS"> 0.00 </contents>
+     <!--<capacity unit="LBS"> 0.00 </capacity>
+     <contents unit="LBS"> 0.00 </contents>-->
+     <capacity unit="LBS"> 100.00 </capacity>
+     <contents unit="LBS"> 1.00 </contents>
   </tank>
 
   <tank type="FUEL" number="2">
+     <!--<location unit="IN">
+       <x>  -0.00 </x>
+       <y>   0.00 </y>
+       <z>   0.04 </z>-->
      <location unit="M">
-       <x> -0.3</x>
-       <y> -1.75 </y>
-       <z> -0.0715 </z>
+          <x> -0.3</x>
+          <y> -1.75 </y>
+          <z> -0.0715 </z>
      </location>
      <capacity unit="LBS"> 3000.00 </capacity>
-     <contents unit="LBS"> 1500.00 </contents>
+     <!-- station-2 start -->
+     <!--<contents unit="LBS"> 1500.00 </contents>-->
+     <contents unit="LBS"> 0 </contents>
+     <!-- station-2 end -->
   </tank>
 
   <tank type="FUEL" number="3">
+     <!--<location unit="IN">
+       <x>  -0.00 </x>
+       <y>   0.00 </y>
+       <z>   0.04 </z>-->
      <location unit="M">
-       <x> -0.3</x>
-       <y>  1.75 </y>
-       <z> -0.0715 </z>
+          <x> -0.3</x>
+          <y>  1.75 </y>
+          <z> -0.0715 </z>
      </location>
      <capacity unit="LBS"> 3000.00 </capacity>
-     <contents unit="LBS"> 1500.00 </contents>
+     <!-- station-3 start -->
+     <!--<contents unit="LBS"> 1500.00 </contents>-->
+     <contents unit="LBS"> 0 </contents>
+     <!-- station-3 end -->
   </tank>
 
  </propulsion>
+
+ <!-- station-4 start -->
+ <system file="armament"/>
+ <!-- station-4 end -->
 
  <flight_control name="FCS: juef128">
   <channel name="Throttle">

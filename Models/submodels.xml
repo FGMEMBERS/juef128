@@ -60,7 +60,7 @@
 		<name>right-missile</name>
 		<model>Aircraft/juef128/Models/missiles/x-4-right.xml</model>
 		<trigger>controls/armament/station[2]/missiles</trigger>
-		<speed>100</speed>
+		<speed>500</speed>
 		<repeat>false</repeat>
                 <count>1</count>
 		<!--x="-0.7094"
@@ -92,7 +92,7 @@
 		<name>left-missile</name>
 		<model>Aircraft/juef128/Models/missiles/x-4-left.xml</model>
 		<trigger>controls/armament/station[3]/missiles</trigger>
-		<speed>100</speed>
+		<speed>500</speed>
 		<repeat>false</repeat>
 		<count>1</count>
 		<x-offset>0.9600</x-offset>
