@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+	<!-- Front hotspots -->
+	<panel>
+		<path>Aircraft/juef128/Models/Interior/Panel/panel-hotspots.xml</path>
+		<bottom-left>
+			<!--<x-m>-15.7</x-m>
+			<y-m>-0.40</y-m>
+			<z-m>-5.8</z-m>
+			<x-m>0.019</x-m>
+			<y-m>-0.427</y-m>
+			<z-m>-0.277</z-m>
+			<x-m>0.019</x-m>
+			<y-m>-0.449</y-m>
+			<z-m>-0.295</z-m>-->
+			<x-m>0.042</x-m>
+			<y-m>-0.412</y-m>
+			<z-m>-0.283</z-m>
+		</bottom-left>
+		<bottom-right>
+			<!--<x-m>-15.7</x-m>
+			<y-m> 0.40</y-m>
+			<z-m>-5.8</z-m>
+			<x-m>0.019</x-m>
+			<y-m>0.427</y-m>
+			<z-m>-0.277</z-m>
+			<x-m>0.019</x-m>
+			<y-m>0.449</y-m>
+			<z-m>-0.295</z-m>-->
+			<x-m>0.042</x-m>
+			<y-m>0.443</y-m>
+			<z-m>-0.283</z-m>
+		</bottom-right>
+		<top-left>
+			<!--<x-m>-15.73</x-m>
+			<y-m>-0.40</y-m>
+			<z-m>-5.1</z-m>
+			<x-m>0.0193</x-m>
+			<y-m>-0.427</y-m>
+			<z-m>0.423</z-m>
+			<x-m>0.0193</x-m>
+			<y-m>-0.397</y-m>
+			<z-m>0.405</z-m>-->
+			<x-m>0.042</x-m>
+			<y-m>-0.412</y-m>
+			<z-m>0.413</z-m>
+		</top-left>
+ 	</panel>
+
+  <!-- RADAR -->
+	<model>
+		<name>radar</name>
+		<path>Aircraft/juef128/Models/Interior/Panel/Instruments/radar/radar.xml</path>
+		<offsets>
+			<!--<x-m>-15.747</x-m>
+			<y-m>0.163</y-m>
+			<z-m>-5.513</z-m>
+			<pitch-deg>-11</pitch-deg>-->
+			<x-m>0.017</x-m>
+			<y-m>0.190</y-m>
+			<z-m>0.010</z-m>
+		</offsets>
+ 	</model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <!--<x-m> 0.017 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.040 </z-m>-->
+      <x-m> 0.017 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.100 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <!--<x-m>  0.016 </x-m>
+      <y-m> -0.090 </y-m>
+      <z-m>  0.040 </z-m>-->
+      <x-m>  0.016 </x-m>
+      <y-m> -0.080 </y-m>
+      <z-m>  0.100 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/airspeed/airspeed.xml</path>
+    <offsets>
+      <!--<x-m> 0.015 </x-m>
+      <y-m> 0.090 </y-m>
+      <z-m> 0.040 </z-m>-->
+      <x-m> 0.015 </x-m>
+      <y-m> 0.080 </y-m>
+      <z-m> 0.100 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <!--<x-m>  0.017 </x-m>
+      <y-m> -0.090 </y-m>
+      <z-m> -0.040 </z-m>-->
+      <x-m>  0.017 </x-m>
+      <y-m> -0.080 </y-m>
+      <z-m>  0.030 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <!--<x-m>  0.017 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.040 </z-m>-->
+      <x-m>  0.017 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.030 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <!--<x-m>  0.016 </x-m>
+      <y-m>  0.090 </y-m>
+      <z-m> -0.040 </z-m>-->
+      <x-m>  0.016 </x-m>
+      <y-m>  0.080 </y-m>
+      <z-m>  0.030 </z-m>
+    </offsets>
+  </model>
+
+  <!-- GEAR -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/gear/gear.xml</path>
+    <offsets>
+      <!--<x-m>  0.016 </x-m>
+      <y-m> -0.180 </y-m>
+      <z-m> -0.040 </z-m>-->
+      <x-m>  0.016 </x-m>
+      <y-m> -0.160 </y-m>
+      <z-m> -0.040 </z-m>
+    </offsets>
+  </model>
+
+  <!-- THROTTLE -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/throttle/throttle.xml</path>
+    <offsets>
+      <!--<x-m>  0.017 </x-m>
+      <y-m>  0.180 </y-m>
+      <z-m> -0.040 </z-m>-->
+      <x-m>  0.017 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.040 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <!--<x-m>  0.017 </x-m>
+      <y-m> -0.147 </y-m>
+      <z-m>  0.021 </z-m>-->
+      <x-m>  0.017 </x-m>
+      <y-m> -0.152 </y-m>
+      <z-m>  0.030 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/juef128/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <!--<x-m> 0.017 </x-m>
+      <y-m> 0.147 </y-m>
+      <z-m> 0.021 </z-m>-->
+      <x-m>  0.017 </x-m>
+      <y-m>  0.080 </y-m>
+      <z-m> -0.040 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

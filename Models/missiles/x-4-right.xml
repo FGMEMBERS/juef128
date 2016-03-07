@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>x-4.ac</path>
+		  <animation>
+		    <type>material</type> 
+		    <object-name>x-4</object-name>
+			<condition>		
+			<greater-than>		
+			<property>/controls/armament/station[2]/missiles</property>
+			<value>0</value>
+			</greater-than>
+			</condition>
+		    <emission>	
+		      <red>1</red>	
+		      <green>1</green>	
+		      <blue>1</blue>
+		    </emission>
+		  </animation>
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/trail/rocket_smoke.xml</path>
+	<condition>
+		<equals>
+			<property>/controls/armament/station[2]/missiles</property>
+					<value type="bool">1</value>
+		</equals>
+	</condition>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m> -0.0 </y-m>
+      <z-m> -0.0 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

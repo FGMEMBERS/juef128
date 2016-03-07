@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>apibullet-tracer.ac</path>
+
+   <!-- Transparent Surfaces for Rembrandt rendering -->
+   <effect>
+       <inherits-from>Effects/model-transparent</inherits-from>
+       <!--<inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>-->
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+       <object-name>trace</object-name>
+       <object-name>rect</object-name>
+   </effect>
+
+  <animation>
+    <type>dist-scale</type>
+    <name>30mm</name>
+    <object-name>trace</object-name>
+    <interpolation>
+      <entry><ind>    0 </ind><dep>  0.05 </dep></entry>
+      <entry><ind>   10 </ind><dep>  0.20 </dep></entry>
+      <entry><ind>  400 </ind><dep> 10.00 </dep></entry>
+      <entry><ind> 5000 </ind><dep>  0.00 </dep></entry>
+    </interpolation>
+  </animation>
+
+   <!-- Transparent Surfaces for Rembrandt rendering -->
+   <effect>
+       <inherits-from>Effects/model-transparent</inherits-from>
+   　  <condition>
+      　 <property>sim/rendering/rembrandt/enabled</property>
+   　  </condition>
+    <object-name>trace</object-name>
+   </effect>
+
+</PropertyList>

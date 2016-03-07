@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<!DOCTYPE PropertyList SYSTEM "panel.dtd">
+
+<!-- This part should be the same for any 3D panel.  Customize the actions section -->
+<PropertyList>
+
+ <name>Harrier Panel Hotspots</name>
+ <background>Aircraft/juef128/Models/Interior/Panel/transparent-bg.rgb</background>
+
+ <w>1024</w>
+ <h>768</h>
+ <y-offset>0</y-offset>
+
+ <instruments>
+  <instrument>
+   <name>HotSpotBase</name>
+   <x>512</x>
+   <y>384</y>
+   <w>1024</w>
+   <h>768</h>
+   <w-base>1024</w-base>
+   <h-base>1024</h-base>
+
+
+ <layers>
+  <layer>
+   <name>background</name>
+   <texture>
+     <path>Aircraft/juef128/Models/Interior/Panel/transparent-bg.rgb</path>
+     <x1>0.0</x1>
+     <y1>0.0</y1>
+     <x2>1.0</x2>
+     <y2>1.0</y2>
+   </texture>
+  </layer>
+ </layers>
+
+<!-- define hotspot actions below -->
+
+ <actions>
+  <!--+++++++++++++++  Radar +++++++++++++++++++++++-->
+  <action>
+	  <name>Menu Select</name>
+	  <button>0</button>
+	  <!--<x>178</x>-->
+	  <x>190</x>
+	  <y>20</y>
+	  <!--<w>25</w>
+	  <h>25</h>-->
+	  <w>23</w>
+	  <h>23</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>0</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>Radar BoreSight Select</name>
+	  <button>0</button>
+	  <x>262</x>
+	  <y>-55</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>1</value>
+	  </binding>
+  </action>  
+  <action>
+	  <name>Radar Search Select</name>
+	  <button>0</button>
+	  <x>262</x>
+	  <!--<y>-85</y>-->
+	  <y>-82</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>2</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>Radar AirToAir Select</name>
+	  <button>0</button>
+	  <x>262</x>
+	  <!--<y>-107</y>-->
+	  <y>-109</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>3</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>Radar AirToSurf Select</name>
+	  <button>0</button>
+	  <x>262</x>
+	  <!--<y>-135</y>-->
+	  <y>-136</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/selected</property>
+		  <value>4</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>range10select</name>
+	  <button>0</button>
+	  <x>139</x>
+	  <y>-160</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/range</property>
+		  <value>10</value>
+	  </binding>
+  </action> 
+  <action>
+	  <name>range20select</name>
+	  <button>0</button>
+	  <x>163</x>
+	  <y>-160</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/range</property>
+		  <value>20</value>
+	  </binding>	  
+  </action> 
+  <action>
+	  <name>range40select</name>
+	  <button>0</button>
+	  <x>186</x>
+	  <y>-160</y>
+	  <w>20</w>
+	  <h>20</h>
+	  <binding>
+		  <command>property-assign</command>
+		  <property>instrumentation/radar[0]/range</property>
+		  <value>40</value>
+	  </binding>
+  </action> 
+  <!--+++++++++Panel Lighting++++++++++-->
+  <action>
+	  <name>PanelLightsDown</name>
+	  <button>0</button>
+	  <!--<x>-340</x>
+	  <y>-20</y>-->
+	  <x>165</x>
+	  <y>20</y>
+	  <!--<w>20</w>
+	  <h>25</h>-->
+	  <w>23</w>
+	  <h>23</h>
+	  <binding>
+		  <command>property-adjust</command>
+		  <property>sim/model/material/instruments/factor</property>
+		  <step>-0.2</step>
+		  <min>0</min>
+		  <max>1</max>
+		  <wrap>false</wrap>
+	  </binding>
+  </action> 
+  <action>
+	  <name>PanelLightsUp</name>
+	  <button>0</button>
+	  <!--<x>-320</x>
+	  <y>-20</y>-->
+	  <x>140</x>
+	  <y>20</y>
+	  <!--<w>20</w>
+	  <h>25</h>-->
+	  <w>23</w>
+	  <h>23</h>
+	  <binding>
+		  <command>property-adjust</command>
+		  <property>sim/model/material/instruments/factor</property>
+		  <step>0.2</step>
+		  <min>0</min>
+		  <max>1</max>
+		  <wrap>false</wrap>
+	  </binding>
+  </action>
+ </actions>
+
+  </instrument>
+
+ </instruments>
+
+</PropertyList>
+
+
+

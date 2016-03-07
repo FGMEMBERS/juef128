@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>juef128.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/juef128/Models/Custom_Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>canopy</object-name>
+    <object-name>glass</object-name>
+    <object-name>rear_canopy</object-name>
+    <object-name>rear_glass</object-name>
+    <object-name>right_wing</object-name>
+    <object-name>left_wing</object-name>
+    <object-name>right_flap</object-name>
+    <object-name>left_flap</object-name>
+    <object-name>right_stabilizer</object-name>
+    <object-name>left_stabilizer</object-name>
+    <object-name>right_rudder</object-name>
+    <object-name>left_rudder</object-name>
+    <object-name>gear_right</object-name>
+    <object-name>gear_right_2</object-name>
+    <object-name>gear_left</object-name>
+    <object-name>gear_left_2</object-name>
+    <object-name>right_intake</object-name>
+    <object-name>left_intake</object-name>
+    <object-name>engine</object-name>
+    <object-name>tail</object-name>
+    <object-name>noser_gear_cover</object-name>
+    <object-name>nosel_gear_cover</object-name>
+    <object-name>mainr_gear_cover</object-name>
+    <object-name>mainl_gear_cover</object-name>
+
+
+    <object-name>glass</object-name>
+    <object-name>rear_glass</object-name>
+  </animation>
+
+   <!-- Transparent Surfaces for Rembrandt rendering -->
+   <effect>
+       <inherits-from>Effects/model-transparent</inherits-from>
+       <!--<inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>-->
+   　  <condition>
+      　 <property>sim/rendering/rembrandt/enabled</property>
+   　  </condition>
+       <object-name>glass</object-name>
+       <object-name>rear_glass</object-name>
+   </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>glass</object-name>
+    <object-name>rear_glass</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>glass</object-name>
+    <object-name>rear_glass</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>canopy</object-name>
+    <object-name>glass</object-name>
+    <object-name>rear_canopy</object-name>
+    <object-name>rear_glass</object-name>
+    <object-name>right_wing</object-name>
+    <object-name>left_wing</object-name>
+    <object-name>right_flap</object-name>
+    <object-name>left_flap</object-name>
+    <object-name>right_stabilizer</object-name>
+    <object-name>left_stabilizer</object-name>
+    <object-name>right_rudder</object-name>
+    <object-name>left_rudder</object-name>
+    <object-name>gear_right</object-name>
+    <object-name>gear_right_2</object-name>
+    <object-name>gear_left</object-name>
+    <object-name>gear_left_2</object-name>
+    <object-name>right_intake</object-name>
+    <object-name>left_intake</object-name>
+    <object-name>engine</object-name>
+    <object-name>tail</object-name>
+    <object-name>noser_gear_cover</object-name>
+    <object-name>nosel_gear_cover</object-name>
+    <object-name>mainr_gear_cover</object-name>
+    <object-name>mainl_gear_cover</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <!--<texture>texture.png</texture>-->
+    <texture>red.png</texture>
+  </animation>
+
+
+  <!-- Interior -->
+  <model>
+    <!--<path>Aircraft/juef128/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+      <x-m> 0.965 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0.5 </z-m>
+    </offsets>-->
+    <path>Aircraft/juef128/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <!--<x-m> -3.256 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.041 </z-m>-->
+      <x-m> -2.286 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.541 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <!--<pitch-deg> -30 </pitch-deg>-->
+      <pitch-deg> -4 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/juef128/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 2.931 </x-m>
+      <y-m> -2.630 </y-m>
+      <z-m> 1.567 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/juef128/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 2.931 </x-m>
+      <y-m> 2.630 </y-m>
+      <z-m> 1.567 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/juef128/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> -0.851 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.755 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>RedLight</name>
+    <path>Aircraft/juef128/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m>  3.6422 </x-m>
+      <y-m> -4.729 </y-m>
+      <z-m>  0.60 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>GreenLight</name>
+    <path>Aircraft/juef128/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> 3.6422 </x-m>
+      <y-m> 4.729 </y-m>
+      <z-m> 0.60 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>WhiteRightLight</name>
+    <path>Aircraft/juef128/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m>  3.5422 </x-m>
+      <y-m> -4.729 </y-m>
+      <z-m>  0.60 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>WhiteLeftLight</name>
+    <path>Aircraft/juef128/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> 3.5422 </x-m>
+      <y-m> 4.729 </y-m>
+      <z-m> 0.60 </z-m>
+    </offsets>
+  </model>
+
+
+<!-- Effects on soil -->
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <!--<x-m> -3.884 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.655 </z-m>-->
+      <x-m> -2.624 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.447 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <!--<x-m> -0.910 </x-m>
+      <y-m> -1.155 </y-m>
+      <z-m> -1.383 </z-m>-->
+      <x-m>  0.356 </x-m>
+      <y-m> -0.997 </y-m>
+      <z-m> -1.383 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <!--<x-m> -0.910 </x-m>
+      <y-m>  1.155 </y-m>
+      <z-m> -1.383 </z-m>-->
+      <x-m> -0.356 </x-m>
+      <y-m>  0.997 </y-m>
+      <z-m> -1.383 </z-m>
+    </offsets>
+  </model>
+
+<!-- Gun -->
+  <model>
+    <path>Aircraft/juef128/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -3.442 </x-m>
+      <y-m> -0.432 </y-m>
+      <z-m> -0.185 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -3.442 </x-m>
+      <y-m>  0.432 </y-m>
+      <z-m> -0.185 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- flames  -->
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/flammes/flammes.xml</path>
+    <offsets>
+      <!--<x-m>  3.278 </x-m>-->
+      <x-m>  3.278 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.0 </z-m>
+    </offsets>
+  </model>
+
+<!-- smoke -->
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/smoke/smoke.xml</path>
+    <offsets>
+      <x-m>  2.078 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  -0.300 </z-m>
+    </offsets>
+  </model>
+
+<!-- trail  -->
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/trail/trail.xml</path>
+    <offsets>
+      <x-m>  5.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.0 </z-m>
+    </offsets>
+  </model>
+
+<!-- tiptrail  -->
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/tiptrail/tiptrail-right.xml</path>
+    <name>tiptrail-s</name>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/juef128/Models/Effects/tiptrail/tiptrail-left.xml</path>
+    <name>tiptrail-p</name>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+
+
+<!-- rotor  -->
+
+  <animation>
+    <type>spin</type>
+    <object-name>rotor1</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m> -3.783 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.0 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>rotor2</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m>  0.302 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -0.0 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+
+<!-- rudder  -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left_rudder</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <!--<factor> -20 </factor>-->
+    <factor> 20 </factor>
+    <center>
+      <!--<x-m> 5.361 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.957 </z-m>-->
+      <x-m> 2.761 </x-m>
+      <y-m> -2.700 </y-m>
+      <z-m> 0.957 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+ </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right_rudder</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <!--<factor> -20 </factor>-->
+    <factor> 20 </factor>
+    <center>
+      <!--<x-m> 5.361 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.957 </z-m>-->
+      <x-m> 2.761 </x-m>
+      <y-m> 2.700 </y-m>
+      <z-m> 0.957 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+ </animation>
+
+
+<!-- aileron  -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left_flap</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 20 </factor>
+    <axis>
+      <!--<x1-m>  1.995 </x1-m>
+      <y1-m> -7.105 </y1-m>
+      <z1-m>  0.707 </z1-m>
+      <x2-m>  1.219 </x2-m>
+      <y2-m> -4.380 </y2-m>
+      <z2-m>  0.583 </z2-m>-->
+      <x1-m>  6.595 </x1-m>
+      <y1-m> -7.105 </y1-m>
+      <z1-m>  0.606 </z1-m>
+      <x2-m>  5.819 </x2-m>
+      <y2-m> -6.329 </y2-m>
+      <z2-m>  0.606 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right_flap</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> -20 </factor>
+    <axis>
+      <!--<x1-m> 1.219 </x1-m>
+      <y1-m> 4.380 </y1-m>
+      <z1-m> 0.583 </z1-m>
+      <x2-m> 1.995 </x2-m>
+      <y2-m> 7.105 </y2-m>
+      <z2-m> 0.707 </z2-m>-->
+      <x1-m> 5.819 </x1-m>
+      <y1-m> 6.329 </y1-m>
+      <z1-m> 0.606 </z1-m>
+      <x2-m> 6.595 </x2-m>
+      <y2-m> 7.105 </y2-m>
+      <z2-m> 0.606 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left_flap</object-name>
+    <!--<property>surface-positions/left-elevator-pos-norm</property>-->
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 20 </factor>
+    <axis>
+      <!--<x1-m>  1.995 </x1-m>
+      <y1-m> -7.105 </y1-m>
+      <z1-m>  0.707 </z1-m>
+      <x2-m>  1.219 </x2-m>
+      <y2-m> -4.380 </y2-m>
+      <z2-m>  0.583 </z2-m>-->
+      <x1-m>  6.595 </x1-m>
+      <y1-m> -7.105 </y1-m>
+      <z1-m>  0.606 </z1-m>
+      <x2-m>  5.819 </x2-m>
+      <y2-m> -6.329 </y2-m>
+      <z2-m>  0.606 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right_flap</object-name>
+    <!--<property>surface-positions/right-elevator-pos-norm</property>-->
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 20 </factor>
+    <axis>
+      <!--<x1-m> 1.219 </x1-m>
+      <y1-m> 4.380 </y1-m>
+      <z1-m> 0.583 </z1-m>
+      <x2-m> 1.995 </x2-m>
+      <y2-m> 7.105 </y2-m>
+      <z2-m> 0.707 </z2-m>-->
+      <x1-m> 5.819 </x1-m>
+      <y1-m> 6.329 </y1-m>
+      <z1-m> 0.606 </z1-m>
+      <x2-m> 6.595 </x2-m>
+      <y2-m> 7.105 </y2-m>
+      <z2-m> 0.606 </z2-m>
+    </axis>
+  </animation>
+
+
+<!-- gear  -->
+
+    <animation>
+	    <type>rotate</type>
+	    <object-name>nosel_gear_cover</object-name>
+	    <property>/gear/gear[0]/position-norm</property>
+	    <!--min-deg>0</min-deg-->
+	    <!--max-deg>360</max-deg-->
+	    <interpolation>
+	       <entry> <ind>0.0</ind> <dep>0</dep> </entry>
+	       <entry> <ind>0.4</ind> <dep>-90</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>-100</dep> </entry>
+	    </interpolation>
+	    <axis>
+		      <x1-m>  0.2 </x1-m>
+		      <y1-m>  -0.24 </y1-m>
+		      <z1-m>  -0.75 </z1-m>
+		      <x2-m>  0.3 </x2-m>
+		      <y2-m>  -0.241 </y2-m>
+		      <z2-m>  -0.76 </z2-m>
+	    </axis>
+    </animation>
+
+    <animation>
+	    <type>rotate</type>
+	    <object-name>noser_gear_cover</object-name>
+	    <property>/gear/gear[0]/position-norm</property>
+	    <!--min-deg>0</min-deg-->
+	    <!--max-deg>360</max-deg-->
+	    <interpolation>
+	       <entry> <ind>0.0</ind> <dep>0</dep> </entry>
+	       <entry> <ind>0.4</ind> <dep>90</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>100</dep> </entry>
+	    </interpolation>
+	    <axis>
+		      <x1-m>  0.2 </x1-m>
+		      <y1-m>  0.24 </y1-m>
+		      <z1-m>  -0.75 </z1-m>
+		      <x2-m>  0.3 </x2-m>
+		      <y2-m>  0.241 </y2-m>
+		      <z2-m>  -0.76 </z2-m>
+	    </axis>
+    </animation>
+
+    <animation>
+	    <type>rotate</type>
+	    <object-name>gearfront</object-name>
+	    <object-name>wheelfront_0</object-name>
+	    <object-name>wheelfront_1</object-name>
+	    <property>/gear/gear[0]/position-norm</property>
+	    <!--min-deg>0</min-deg-->
+	    <!--max-deg>360</max-deg-->
+	    <interpolation>
+	       <!--<entry> <ind>0.0</ind> <dep>-110</dep> </entry>
+	       <entry> <ind>0.5</ind> <dep>-110</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>0</dep> </entry>-->
+	       <entry> <ind>0.0</ind> <dep>-68</dep> </entry>
+	       <entry> <ind>0.5</ind> <dep>-68</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>0</dep> </entry>
+	    </interpolation>
+	    <center>
+		    <!--<x-m>-3.392</x-m>
+		    <y-m>0</y-m>
+		    <z-m>-0.589</z-m>-->
+		    <x-m>-3.142</x-m>
+		    <y-m>0</y-m>
+		    <z-m>-0.489</z-m>
+	    </center>
+	    <axis>
+		    <!--<x>0</x>
+		    <y>0.068095</y>
+		    <z>0</z>-->
+		    <x>0</x>
+		    <y>0.068095</y>
+		    <z>0</z>
+	    </axis>
+    </animation>
+
+    <animation>
+	    <type>rotate</type>
+	    <object-name>mainl_gear_cover</object-name>
+	    <property>/gear/gear[1]/position-norm</property>
+	    <!--min-deg>0</min-deg-->
+	    <!--max-deg>360</max-deg-->
+	    <interpolation>
+	       <!--<entry> <ind>0.0</ind> <dep>0</dep> </entry>
+	       <entry> <ind>0.4</ind> <dep>100</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>110</dep> </entry>-->
+	       <entry> <ind>0.0</ind> <dep>0</dep> </entry>
+	       <entry> <ind>0.4</ind> <dep>110</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>120</dep> </entry>
+	    </interpolation>
+	    <center>
+		    <!--<x-m>0.7974</x-m>
+		    <y-m>-0.462525</y-m>
+		    <z-m>-0.314969</z-m>-->
+		    <x-m>0.7974</x-m>
+		    <y-m>-0.562525</y-m>
+		    <z-m>-0.364969</z-m>
+	    </center>
+	    <axis>
+		    <!--<x>-1.38216</x>
+		    <y>-0.140991</y>
+		    <z>-0.072531</z>-->
+		    <x>-1.38216</x>
+		    <y>-0.0</y>
+		    <z>-0.0</z>
+	    </axis>
+    </animation>
+
+    <animation>
+	    <type>rotate</type>
+	    <object-name>mainr_gear_cover</object-name>
+	    <property>/gear/gear[2]/position-norm</property>
+	    <!--min-deg>0</min-deg-->
+	    <!--max-deg>360</max-deg-->
+	    <factor>110</factor>
+	    <interpolation>
+	       <!--<entry> <ind>0.0</ind> <dep>0</dep> </entry>
+	       <entry> <ind>0.4</ind> <dep>100</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>110</dep> </entry>-->
+	       <entry> <ind>0.0</ind> <dep>0</dep> </entry>
+	       <entry> <ind>0.4</ind> <dep>110</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>120</dep> </entry>
+	    </interpolation>
+	    <center>
+		    <!--<x-m>0.7974</x-m>
+		    <y-m>0.462525</y-m>
+		    <z-m>-0.314969</z-m>-->
+		    <x-m>0.7974</x-m>
+		    <y-m>0.562525</y-m>
+		    <z-m>-0.364969</z-m>
+	    </center>
+	    <axis>
+		    <!--<x>1.38216</x>
+		    <y>-0.140991</y>
+		    <z>0.072531</z>-->
+		    <x>1.38216</x>
+		    <y>-0.0</y>
+		    <z>0.0</z>
+	    </axis>
+    </animation>
+
+    <animation>
+	    <type>rotate</type>
+	    <object-name>gearleft</object-name>
+	    <object-name>gear_left_2</object-name>
+	    <object-name>wheelleft</object-name>
+	    <property>/gear/gear[1]/position-norm</property>
+	    <!--min-deg>0</min-deg-->
+	    <!--max-deg>360</max-deg-->
+	    <!--factor>1</factor-->
+	    <interpolation>
+	       <!--<entry> <ind>0.0</ind> <dep>130</dep> </entry>
+	       <entry> <ind>0.5</ind> <dep>120</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>0</dep> </entry>-->
+	       <entry> <ind>0.0</ind> <dep>50</dep> </entry>
+	       <entry> <ind>0.5</ind> <dep>40</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>0</dep> </entry>
+	    </interpolation>
+	    <center>
+		    <!--<x-m>0.247864</x-m>
+		    <y-m>-0.38416</y-m>
+		    <z-m>-0.301693</z-m>-->
+		    <x-m>-1.0</x-m>
+		    <y-m>-0.38416</y-m>
+		    <z-m>-0.301693</z-m>
+	    </center>
+	    <axis>
+		    <!--<x>0.4</x>
+		    <y>-1.0</y>
+		    <z>0.2</z>-->
+		    <x>0.4</x>
+		    <y>-0.36</y>
+		    <z>0.2</z>
+	    </axis>
+    </animation>
+
+    <animation>
+	    <type>rotate</type>
+	    <object-name>gearright</object-name>
+	    <object-name>gear_right_2</object-name>
+	    <object-name>wheelright</object-name>
+	    <property>/gear/gear[2]/position-norm</property>
+	    <!--min-deg>0</min-deg-->
+	    <!--max-deg>360</max-deg-->
+	    <!--factor>1</factor-->
+	    <interpolation>
+	       <!--<entry> <ind>0.0</ind> <dep>130</dep> </entry>
+	       <entry> <ind>0.5</ind> <dep>120</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>0</dep> </entry>-->
+	       <entry> <ind>0.0</ind> <dep>50</dep> </entry>
+	       <entry> <ind>0.5</ind> <dep>40</dep> </entry>
+	       <entry> <ind>1.0</ind> <dep>0</dep> </entry>
+	    </interpolation>
+	    <center>
+		    <x-m>-1.0</x-m>
+		    <y-m>0.38416</y-m>
+		    <z-m>-0.301693</z-m>
+	    </center>
+	    <axis>
+		    <!--<x>-0.4</x>
+		    <y>-1.0</y>
+		    <z>-0.2</z>-->
+		    <x>-0.4</x>
+		    <y>-0.36</y>
+		    <z>-0.2</z>
+	    </axis>
+    </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>wheelfront_1</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <!--<x-m> -5.888 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.381 </z-m>-->
+      <x-m> -2.624 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.234 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>wheelleft</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <!--<x-m> -1.368 </x-m>
+      <y-m> -0.997 </y-m>
+      <z-m> -1.310 </z-m>-->
+      <x-m>  0.356 </x-m>
+      <y-m> -0.997 </y-m>
+      <z-m> -1.09 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>wheelright</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <!--<x-m> -1.368 </x-m>
+      <y-m>  0.997 </y-m>
+      <z-m> -1.310 </z-m>-->
+      <x-m>  0.356 </x-m>
+      <y-m>  0.997 </y-m>
+      <z-m> -1.09 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+	<!-- drop tank -->
+	<model>
+		<path>Aircraft/juef128/Models/missiles/pylon3.xml</path>
+		<name>pylon_right</name>
+		<offsets>
+			<x-m> 0.3200</x-m>
+			<y-m> 1.7500</y-m>
+			<z-m> 0.3715</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/juef128/Models/missiles/pylon3.xml</path>
+		<name>pylon_left</name>
+		<offsets>
+			<x-m> 0.3200</x-m>
+			<y-m>-1.7500</y-m>
+			<z-m> 0.3715</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/juef128/Models/droptank.xml</path>
+		<name>Droptank Stbd</name>
+		<offsets>
+			<x-m> -0.300</x-m>
+			<y-m> 1.7500</y-m>
+			<z-m> -0.0715</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/juef128/Models/droptank.xml</path>
+		<name>Droptank Port</name>
+		<offsets>
+			<x-m> -0.300</x-m>
+			<y-m> -1.7500</y-m>
+			<z-m> -0.0715</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+	<animation>
+		<type>select</type>
+		<object-name>Droptank Stbd</object-name>
+		<condition>
+			<not>
+				<equals>
+					<property>controls/armament/station[0]/jettison-all</property>
+					<value>1</value>
+				</equals>
+			</not>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>Droptank Port</object-name>
+		<condition>
+			<not>
+				<equals>
+					<property>controls/armament/station[1]/jettison-all</property>
+					<value>1</value>
+				</equals>
+			</not>
+		</condition>
+	</animation>
+
+</PropertyList>
